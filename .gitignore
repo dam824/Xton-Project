@@ -1,0 +1,7 @@
+#folers and files from "API"
+api/node_modules/
+api/.env
+
+#folders and files from "CLIENT"
+client/node_modules/
+client/.env
