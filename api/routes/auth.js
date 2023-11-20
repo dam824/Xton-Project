@@ -35,7 +35,11 @@ router.post('/register', async (req, res) => {
         console.log("Nouvel utilisateur: ", newUser);
 
         const user = await newUser.save();
-        console.log("Utilisateur enregistré: ", user);
+        console.log("Utilisateur enregistré: ", user); 
+        //add user in community array
+        community.members.push(user._id);
+        await community.save();
+        
         res.status(200).json(user);
     } catch (err) {
         console.error("Erreur lors de l'enregistrement: ", err);

@@ -42,6 +42,16 @@ router.put("/:id",async (req, res) => {
     }
 });
 
+//display all community members
+router.get('/:id', async (req,res)=>{
+    try{
+        const community = await Community.findById(req.params.id).populate('members');
+        res.json(community);
+    }catch(err){
+        res.status(500).json(err)
+    }
+})
+
 
 
 

@@ -1,0 +1,23 @@
+<div class="home">
+  <div class="diagonale"></div>
+  <div class="flex justify-center items-center h-screen">
+    <div class="bg-blue-500 bg-opacity-80 rounded-lg p-8 shadow-xl flex flex-col justify-center items-center z-10">
+      <form (ngSubmit)="loginUser()" #loginForm="ngForm">
+        <h1 class="svgBg text-2xl font-bold mb-4 text-center text-white" style="width: 200px; height: 18px; display: flex; justify-content: center; align-items: center;">
+        </h1>
+        <div class="mb-4">
+          <input type="text" [(ngModel)]="email" name="email" placeholder="Email" class="bg-white bg-opacity-50 text-black py-2 px-4 rounded-lg w-full" required>
+        </div>
+        <div class="mb-4">
+          <input type="password" [(ngModel)]="password" name="password" placeholder="Password" class="bg-white bg-opacity-50 text-black py-2 px-4 rounded-lg w-full" required>
+        </div>
+        <div class="flex justify-center">
+          <button type="submit" class="bg-black bg-opacity-75 text-white hover:bg-black hover:text-white py-2 px-4 rounded-lg">Login</button>
+        </div>
+      </form>
+      <div class="mt-4">
+        <span class="text-white">Vous n'avez pas de compte ? <a routerLink="/register" class="text-white underline">Enregistrez-vous ici</a></span>
+      </div>
+    </div>
+  </div>
+</div>

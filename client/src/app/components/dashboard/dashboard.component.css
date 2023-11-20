@@ -1,0 +1,14 @@
+.home {
+  position: relative;
+  background-image: url("../../assets/images/bureaux.jpg");
+  background-size: cover; /* Ajustez la taille de l'image pour qu'elle couvre toute la zone */
+  background-position: center; /* Centrez l'image horizontalement et verticalement */
+  background-repeat: no-repeat;
+
+}
+
+
+
+a[routerLink="/login"], a[routerLink="/register"] {
+  cursor: pointer;
+}

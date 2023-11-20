@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.svgBg {
+  background-image: url('../src/app/assets/images/nexton-logo.svg');
+  background-size: contain; /* ou toute autre taille que vous souhaitez */
+  background-position: center;
+  background-repeat: no-repeat;
+}
